@@ -1,8 +1,9 @@
 import requests
 import json
+import config
 
-api_key = "3mM44UbC1evZBR_B6j76Te2Z9Dy4r4WJJPXjH"
-secret_key = "4t5hA7yFsrswZQC1RrkdFJ"
+api_key = config.api_key
+secret_key = config.secret_key
 
 headers = {"Authorization" : "sso-key {}:{}".format(api_key, secret_key)}
 
